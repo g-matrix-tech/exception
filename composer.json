@@ -1,0 +1,22 @@
+{
+    "name": "marketingsolutions/library-exception",
+    "description": "Library for customized exceptions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gegham Kocharyan",
+            "email": "kocharyan.gegham@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ms\\Exception\\": "src/",
+            "Tests\\": "tests/"
+        }
+    }
+}
