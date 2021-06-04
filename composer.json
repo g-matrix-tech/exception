@@ -1,12 +1,12 @@
 {
-    "name": "marketingsolutions/library-exception",
+    "name": "g-matrix-tech/exception",
     "description": "Library for customized exceptions",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Gegham Kocharyan",
-            "email": "kocharyan.gegham@mail.ru"
+            "email": "g.matrix.tech@gmail.com"
         }
     ],
     "minimum-stability": "dev",
