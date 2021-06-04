@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ms\Exception;
+namespace GMatrixTech\Exception;
 
 use Exception;
+use Throwable;
 
 /**
  * Class BaseException

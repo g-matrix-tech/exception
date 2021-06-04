@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ms\Exception;
+namespace GMatrixTech\Exception;
 
 /**
  * Class BasicUsageTest
@@ -20,7 +20,7 @@ class BasicUsage
             throw new BaseException([
                 'currentService' => '',
                 'code' => 0,
-                'file' => '/Users/gegham/linux/code/Marketing_Solutions/library-exception/src/BasicUsage.php',
+                'file' => dirname(__FILE__) . '/BasicUsage.php',
                 'line' => 20,
                 'message' => 'Basic Use as Array',
             ]);

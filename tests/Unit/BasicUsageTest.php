@@ -3,8 +3,8 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Ms\Exception\BasicUsage;
-use Ms\Exception\BaseException;
+use GMatrixTech\Exception\BasicUsage;
+use GMatrixTech\Exception\BaseException;
 
 class BasicUsageTest extends TestCase
 {
@@ -13,7 +13,7 @@ class BasicUsageTest extends TestCase
         $err_msg = json_encode([
             'currentService' => '',
             'code' => 0,
-            'file' => '/Users/gegham/linux/code/Marketing_Solutions/library-exception/src/BasicUsage.php',
+            'file' => $this->getBaseExceptionPath(),
             'line' => 20,
             'message' => 'Basic Use as Array',
         ]);
@@ -30,7 +30,7 @@ class BasicUsageTest extends TestCase
         $err_msg = json_encode([
             'currentService' => '',
             'code' => 0,
-            'file' => '/Users/gegham/linux/code/Marketing_Solutions/library-exception/src/BasicUsage.php',
+            'file' => $this->getBaseExceptionPath(),
             'line' => 28,
             'message' => 'Basic Use as String',
         ]);
@@ -40,5 +40,10 @@ class BasicUsageTest extends TestCase
 
         $bu = new BasicUsage();
         $bu->run('string');
+    }
+
+    private function getBaseExceptionPath(): string
+    {
+         return str_replace("tests/Unit","src", dirname(__FILE__)) . "/BasicUsage.php";
     }
 }

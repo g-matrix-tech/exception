@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ms\\Exception\\": "src/",
+            "GMatrixTech\\Exception\\": "src/",
             "Tests\\": "tests/"
         }
     }
